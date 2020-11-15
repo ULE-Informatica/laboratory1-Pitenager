@@ -73,6 +73,7 @@ Todos los errores se sacan del fichero original: **exampleStrings.c**
 
 ## **Soluciones específicas**
 - Al comienzo de la funcion `main()`, se ha añadido un control del número de argumentos que se recogen para asegurar que sean los esperados. 
+
 ![Screenshot](./images/argumentos.png)
 - En la línea 23, se ha modificado la declaración de la variable `const char* s1` para cumplir con el estándar C11 quitando la "R", ya que **gcc** no admite este formato. Si estuviésemos compilando con **g++**, sí podría mantenerse la "R" pues compila como si fuese código C++.
 - En la función `get_dirname()`, se reserva memoria dinámicamente mediante `malloc` pero no se libera luego la memoria. Se añade un `free(slash);` para liberar la memoria reservada antes de salir de la función.
