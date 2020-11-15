@@ -1,0 +1,28 @@
+exampleStrings.c: In function ‘void gets_example_func()’:
+exampleStrings.c:32:16: error: return-statement with a value, in function returning 'void' [-fpermissive]
+         return 1;
+                ^
+exampleStrings.c: In function ‘const char* get_dirname(const char*)’:
+exampleStrings.c:39:18: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+   slash = strrchr(pathname, '/');
+           ~~~~~~~^~~~~~~~~~~~~~~
+exampleStrings.c: In function ‘void get_y_or_n()’:
+exampleStrings.c:51:2: error: ‘gets’ was not declared in this scope
+  gets(response);
+  ^~~~
+exampleStrings.c:51:2: note: suggested alternative: ‘fgets’
+  gets(response);
+  ^~~~
+  fgets
+exampleStrings.c: In function ‘int main(int, char**)’:
+exampleStrings.c:67:23: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+     char *ptr_char  = "new string literal";
+                       ^~~~~~~~~~~~~~~~~~~~
+exampleStrings.c:68:9: warning: unused variable ‘size_array1’ [-Wunused-variable]
+     int size_array1 = strlen("аналитик");
+         ^~~~~~~~~~~
+exampleStrings.c:69:9: warning: unused variable ‘size_array2’ [-Wunused-variable]
+     int size_array2 = 100;
+         ^~~~~~~~~~~
+exampleStrings.c:73:10: warning: unused variable ‘analitic3’ [-Wunused-variable]
+     char analitic3[100]="аналитик";

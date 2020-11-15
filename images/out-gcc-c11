@@ -1,0 +1,46 @@
+exampleStrings.c:22:19: warning: missing terminating " character
+ const char* s1 = R"foo(
+                   ^
+exampleStrings.c:22:19: error: missing terminating " character
+ const char* s1 = R"foo(
+                   ^~~~~
+exampleStrings.c:22:18: error: ‘R’ undeclared here (not in a function)
+ const char* s1 = R"foo(
+                  ^
+exampleStrings.c:23:1: error: expected ‘,’ or ‘;’ before ‘Hello’
+ Hello
+ ^~~~~
+exampleStrings.c:25:5: warning: missing terminating " character
+ )foo";
+     ^
+exampleStrings.c:25:5: error: missing terminating " character
+ )foo";
+     ^~
+exampleStrings.c: In function ‘gets_example_func’:
+exampleStrings.c:32:16: warning: ‘return’ with a value, in function returning void
+         return 1;
+                ^
+exampleStrings.c:28:6: note: declared here
+ void gets_example_func(void) {
+      ^~~~~~~~~~~~~~~~~
+exampleStrings.c: In function ‘get_y_or_n’:
+exampleStrings.c:51:2: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]
+  gets(response);
+  ^~~~
+  fgets
+exampleStrings.c: In function ‘main’:
+exampleStrings.c:94:11: error: ‘s2’ undeclared (first use in this function); did you mean ‘s1’?
+     puts (s2);
+           ^~
+           s1
+exampleStrings.c:94:11: note: each undeclared identifier is reported only once for each function it appears in
+exampleStrings.c:73:10: warning: unused variable ‘analitic3’ [-Wunused-variable]
+     char analitic3[100]="аналитик";
+          ^~~~~~~~~
+exampleStrings.c:69:9: warning: unused variable ‘size_array2’ [-Wunused-variable]
+     int size_array2 = 100;
+         ^~~~~~~~~~~
+exampleStrings.c:68:9: warning: unused variable ‘size_array1’ [-Wunused-variable]
+     int size_array1 = strlen("аналитик");
+         ^~~~~~~~~~~
+

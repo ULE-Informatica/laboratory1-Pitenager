@@ -1,0 +1,3 @@
+/home/pruiz/Descargas/master/dps/laboratory1-Pitenager/build/CMakeFiles/rebuild_cache.dir
+/home/pruiz/Descargas/master/dps/laboratory1-Pitenager/build/CMakeFiles/exampleStrings.dir
+/home/pruiz/Descargas/master/dps/laboratory1-Pitenager/build/CMakeFiles/edit_cache.dir

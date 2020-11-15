@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/pruiz/Descargas/master/dps/laboratory1-Pitenager/build",
+  "command": "/usr/bin/c89-gcc   -g   -std=c11 -Wall -pedantic --verbose -o CMakeFiles/exampleStrings.dir/exampleStrings_def.c.o   -c /home/pruiz/Descargas/master/dps/laboratory1-Pitenager/exampleStrings_def.c",
+  "file": "/home/pruiz/Descargas/master/dps/laboratory1-Pitenager/exampleStrings_def.c"
+}
+]
