@@ -40,9 +40,6 @@ const char *get_dirname(const char *pathname) {
   if (slash) {
     *slash = '\0'; /* Undefined behavior */
   }
-
-  free(slash);
-  
   return pathname;
 }
  
